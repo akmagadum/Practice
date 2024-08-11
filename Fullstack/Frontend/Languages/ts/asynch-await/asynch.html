@@ -1,0 +1,18 @@
+<script>
+    async function promiseExecutor(){
+     let deepak= new Promise((full,notfull)=>{
+         //full("thank u for fullfillment")
+         setTimeout(()=>{
+             full("thank u for fullfillment")
+         },2000)
+     
+     })
+ 
+  console.log( await deepak)
+     deepak.catch((g)=>{
+         console.log(g)
+     })
+     console.log(deepak)
+     }
+     promiseExecutor()
+ </script>

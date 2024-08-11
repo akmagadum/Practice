@@ -1,0 +1,18 @@
+<script>
+    let deepak= new Promise((full,notfull)=>{
+         full("thank u for fullfillment")
+         setTimeout(()=>{
+             notfull("thank u for not fullfillment")
+         },2000)
+     
+     })
+ 
+     deepak.then((g)=>{
+         console.log(g)
+         
+     })
+     deepak.catch((g)=>{
+         console.log(g)
+     })
+     console.log(deepak)
+ </script>
