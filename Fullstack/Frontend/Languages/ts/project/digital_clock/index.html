@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1 style="color: brown; ">Digital_Clock</h1>
+        <br>
+        <h1 id="root"></h1>
+    </center>
+    
+
+    <script>
+        let div=document.getElementById('root')
+        let Sec=0;
+        let Min=0;
+        let Hr=0;
+        
+        
+        setInterval(()=>{
+            div.innerHTML=`hours:${Hr}...minute:${Min}...sec:${Sec++}`
+            if(Sec==60){
+            Min++
+            Sec=0
+            }
+            if(Min==60){
+                Hr++
+                Min=0
+            }
+        },1000)
+        
+        
+    </script>
+    
+</body>
+</html>

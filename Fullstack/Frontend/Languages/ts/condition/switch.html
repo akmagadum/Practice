@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1 style="color: chocolate; font-family: 'Times New Roman', Times, serif;">Guess the Day</h1>
+        <br>
+        <h1 id="root"></h1>
+        <button onclick="guess()">Guess then click me</button>
+    </center>
+    <script>
+        function guess(){
+            let num=Math.floor(Math.random()*10+1)
+            switch (num){
+            case 1: root.innerHTML="Mon"
+            break;
+            case 2: root.innerHTML="Tue"
+            break;
+            case 3: root.innerHTML="Wed"
+            break;
+            case 4: root.innerHTML="Thu"
+            break;
+            case 5: root.innerHTML="Fri"
+            break;
+            case 6: root.innerHTML="Sat"
+            break;
+            case 7: root.innerHTML="Sun"
+            break;
+            }
+            
+        }
+    </script>
+    
+</body>
+</html>

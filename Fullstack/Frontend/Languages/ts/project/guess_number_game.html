@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+     <h1>Month Guessing Game</h1>
+     <br>
+     <h1 id="root"></h1>
+     <button onclick="game()">click here</button>
+    </center>
+    
+    <script>
+        function game(){
+            let num=document.getElementById('root')
+            console.log(num)
+            num.innerHTML = Math.floor(Math.random()*12+1)
+        }
+    </script>
+
+    
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1 style="color: darkmagenta;">Stop_Watch</h1>
+        <br>
+        <h1 id="root"></h1>
+        <button style="background-color: darkgreen;" onclick="Start()">Start</button>
+        
+        <button style="background-color: darkred;" onclick="Stop()">Stop</button>
+    
+        <button style="background-color: darkblue;" onclick="Reset()">Reset</button>
+
+    </center>
+    <script>
+        let Sec=0
+        let Min=0
+        let Hr=0
+        let interval;
+        function Start(){
+            if(!interval){
+                interval=
+            
+            setInterval(()=>{
+            let div=document.getElementById('root')
+                div.innerHTML=`Hours=${Hr}.....Minutes=${Min}.....Seconds=${Sec++}`
+                if(Sec==60){
+                    Min++
+                    Sec=0
+                }
+                if(Min==60){
+                    Hr++
+                    Min=0
+                }   
+        },1000)
+        }
+    }
+
+          
+        function Stop(){
+            clearInterval(interval)
+            interval=null
+            
+        }
+        function Reset(){
+            stop()
+            Sec = 0;
+            Min = 0;
+            Hr = 0;
+            document.getElementById('root').innerHTML=`Hours=0......Minutes=0.....Sec0nds=0`
+        }
+    </script>
+</body>
+</html>
