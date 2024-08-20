@@ -1,0 +1,6 @@
+.container1 {
+    min-height: 100vh; /* minimum height = screen height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }

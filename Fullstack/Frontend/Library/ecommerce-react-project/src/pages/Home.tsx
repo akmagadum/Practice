@@ -5,6 +5,7 @@ import { MuiButton } from "../components/mui/MuiButton"
 import { Mycarousal } from "../components/mycarousal/Mycarousal"
 import { MyNavbar } from "../components/mynavbar/MyNavbar"
 import { CustomStyle } from "../components/styles/CustomStyle"
+import { CardContainerApi } from "../components/cards/CardContainerApi"
 
 export const Home=()=>{
 return<> 
@@ -12,6 +13,9 @@ return<>
 <MyNavbar/>
 <br />
 < Mycarousal/>
+<br />
+<h1>Api card container</h1>
+<CardContainerApi/>
 <br />
 <CardContainer/>
 <CardContainer/>

@@ -1,8 +1,8 @@
-import { Grid, Paper, TextField, Button } from "@mui/material"
+import { Grid, Paper, TextField, Button, Link } from "@mui/material"
 
 import './login.css'
-import { NavLink } from "react-router-dom"
-export const Login=()=>{
+import { NavLink } from "react-router-dom";
+export const Register=()=>{
     return <div className="container1"> 
     <Paper style={{padding:'100px'}}>
 
@@ -14,7 +14,8 @@ export const Login=()=>{
   alignItems="center"
 
 >
-<h1>LoginPage</h1>
+<h1>Register Page</h1>
+<TextField id="outlined-basic" label="Name" variant="outlined" />
 <TextField id="outlined-basic" label="Email" variant="outlined" />
 <br />
 <TextField id="outlined-basic" label="Password" variant="outlined" />
@@ -24,9 +25,9 @@ export const Login=()=>{
   direction="row"
   justifyContent="space-around"
   alignItems="center"
-><NavLink to={'/register'}>
-<Button variant="outlined">Register</Button></NavLink>
-<NavLink to={'/home'}>
+>
+<Button variant="outlined">Register</Button>
+<NavLink to={'/login'}>
 <Button variant="contained">Login</Button></NavLink>
 
 
