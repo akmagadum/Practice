@@ -1,14 +1,21 @@
 import { useState } from "react"
 export const UseStateHook=()=>{
-    let [data,setdata]=useState("Akshay")
+    let [data,setdata]=useState("")
+    let [data1,setdata1]=useState("")
+    let  result=(parseInt(data)+parseInt(data1))
+
     return <>
    <center>
-   <input type="text" name="" id=""  onChange={(g)=>{
+   <input type="number" name="" id=""  onChange={(g)=>{
     setdata(g.target.value)
 
    }}/>
-   <h1>{data}</h1>
-   
+    <input type="number" name="" id=""  onChange={(g)=>{
+    setdata1(g.target.value)
+
+   }}/>
+   <h1>{data}, {data1}, {result}</h1>
+   <button >clikk</button>
    </center>
 
    
