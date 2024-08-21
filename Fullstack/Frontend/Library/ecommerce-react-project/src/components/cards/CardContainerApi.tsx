@@ -25,7 +25,7 @@ export const CardContainerApi=()=>{
   alignItems="center"
 >
 {apidata.map((a:any)=>{
-        return  < MyCards  img={a.img} />
+        return  < MyCards  img={a.image} />
     })}
     
    
